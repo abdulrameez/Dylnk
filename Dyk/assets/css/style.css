@@ -1,0 +1,762 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+/************************ Media Queries ***********************/
+/********************* Heading Tags *************************/
+body {
+  overflow-x: hidden !important;
+}
+
+h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 147px;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 125px;
+}
+@media (min-width: 1280px) and (max-width: 1399px) {
+  h1 {
+    font-size: 100px;
+    line-height: 85px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1279px) {
+  h1 {
+    font-size: 100px;
+    line-height: 85px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  h1 {
+    font-size: 95px;
+    line-height: 65px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    font-size: 70px;
+    line-height: 50px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  h1 {
+    font-size: 65px;
+    line-height: 45px;
+  }
+}
+
+h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 300;
+  font-size: 68px;
+  font-style: normal;
+}
+@media (min-width: 1280px) and (max-width: 1399px) {
+  h2 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1279px) {
+  h2 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  h2 {
+    font-size: 47px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  h2 {
+    font-size: 35px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  h2 {
+    font-size: 32px;
+  }
+}
+
+p {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.global-btn {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  text-decoration: none;
+  background-color: #3f50ef;
+  border-radius: 40px;
+  padding: 10px 35px;
+  color: #ffffff;
+  border: 1px solid #3f50ef;
+  transition: all 0.6s;
+}
+@media (min-width: 1280px) and (max-width: 1399px) {
+  .global-btn {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1279px) {
+  .global-btn {
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .global-btn {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .global-btn {
+    font-size: 18px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .global-btn {
+    font-size: 16px;
+  }
+}
+.global-btn:hover {
+  background: transparent;
+  color: #ffffff;
+  border-color: #fff;
+}
+.global-btn:hover .fa-solid {
+  transform: rotate(0deg);
+}
+.global-btn .fa-solid {
+  transform: rotate(-35deg);
+}
+
+/************* Header **************/
+.navbar {
+  padding-top: 30px;
+}
+.navbar .navbar-brand {
+  max-width: 200px;
+}
+.navbar ul a {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 8px 25px;
+}
+
+.active a {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #0b0c0d !important;
+  background: #ffffff !important;
+  padding: 8px 25px !important;
+  border-radius: 50px;
+}
+
+.navbar-nav {
+  border: 2px solid #fff;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+.navbar-formobile {
+  display: none;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .navbar-formobile {
+    display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-formobile {
+    display: block;
+  }
+}
+
+.offcanvas-header {
+  background: #020306;
+}
+.offcanvas-header .fa-solid {
+  color: #fff;
+}
+
+.offcanvas-body {
+  background: #020306;
+}
+.offcanvas-body .navbar-nav {
+  display: flex;
+  flex-direction: column;
+}
+.offcanvas-body .navbar-nav .nav-link {
+  background-color: transparent !important;
+  padding-right: 20px;
+  padding-left: 20px;
+  position: relative;
+  color: #ffffff !important;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-left: 0px !important;
+}
+.offcanvas-body .navbar-nav .nav-link:hover::before {
+  display: none;
+}
+.offcanvas-body .tell-num-nav {
+  font-size: 13px !important;
+}
+.offcanvas-body .global-button {
+  font-size: 13px !important;
+}
+.offcanvas-body .navbar-nav {
+  border: none;
+  border-radius: none;
+  padding: none;
+}
+
+.class-for-mobile {
+  display: none;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .class-for-mobile {
+    display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .class-for-mobile {
+    display: block;
+  }
+}
+.class-for-mobile .fa-solid {
+  font-size: 28px;
+  color: white;
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+/************* Hero Section **************/
+.hero-section {
+  background: url(../images/hero.png);
+  padding-top: 125px;
+  padding-bottom: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .hero-section {
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 185px;
+  }
+}
+.hero-section .text-part h2 {
+  color: #ffffff;
+}
+.hero-section .text-part p {
+  margin-bottom: 35px;
+  margin-top: 30px;
+  font-size: 30px;
+  color: #9d9d9d;
+}
+@media (min-width: 1280px) and (max-width: 1399px) {
+  .hero-section .text-part p {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1279px) {
+  .hero-section .text-part p {
+    font-size: 24px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero-section .text-part p {
+    font-size: 24px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-section .text-part p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .hero-section .text-part p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .hero-section .img-part {
+    margin-top: 55px;
+  }
+}
+
+/************* Introduction Section **************/
+.introduction-section {
+  background-image: url("../images/bg-dy.png");
+  background-color: #020306;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .introduction-section {
+    padding-bottom: 5px;
+  }
+}
+.introduction-section .text-part h2 {
+  color: #ffffff;
+}
+.introduction-section .text-part h3 {
+  font-family: "Space Grotesk", sans-serif;
+  color: #9d9d9d;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+@media (min-width: 1280px) and (max-width: 1399px) {
+  .introduction-section .text-part h3 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1279px) {
+  .introduction-section .text-part h3 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .introduction-section .text-part h3 {
+    font-size: 26px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .introduction-section .text-part h3 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .introduction-section .text-part h3 {
+    font-size: 20px;
+  }
+}
+.introduction-section .text-part p {
+  color: #9d9d9d;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .introduction-section .row {
+    flex-direction: column-reverse;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .introduction-section .img-part {
+    margin-top: 40px;
+  }
+}
+.introduction-section .global-btn {
+  background: transparent;
+  border-color: #fff;
+}
+.introduction-section .global-btn:hover {
+  background: #3f50ef;
+  border-color: #3f50ef;
+}
+
+/************* Hero Text Section **************/
+.text-section {
+  background-image: url("../images/frame.png");
+  background-color: #020306;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .text-section {
+    padding-top: 5px;
+  }
+}
+.text-section .text-part h2 {
+  -webkit-text-stroke: 2px white;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 150px;
+  color: transparent;
+}
+.text-section .text-part h3 {
+  font-family: "Space Grotesk", sans-serif;
+  color: #9d9d9d;
+  font-size: 40px;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+@media (min-width: 1280px) and (max-width: 1399px) {
+  .text-section .text-part h3 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1279px) {
+  .text-section .text-part h3 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .text-section .text-part h3 {
+    font-size: 26px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .text-section .text-part h3 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .text-section .text-part h3 {
+    font-size: 20px;
+  }
+}
+
+svg text {
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: 8px;
+  stroke: #fff;
+  font-size: 120px;
+  font-weight: 700;
+  stroke-width: 1;
+  animation: textAnimate 5s infinite alternate;
+}
+@media (min-width: 1280px) and (max-width: 1399px) {
+  svg text {
+    font-size: 100px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1279px) {
+  svg text {
+    font-size: 100px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  svg text {
+    font-size: 75px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  svg text {
+    font-size: 57px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  svg text {
+    letter-spacing: 5px;
+    stroke: #fff;
+    font-size: 29px;
+  }
+}
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset: 20%;
+    fill: hsl(0, 0%, 100%);
+  }
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: hsla(189, 68%, 75%, 0);
+  }
+}
+/************* Banner Section **************/
+.banner-section {
+  background-color: #020306;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.banner-section .text-part h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 120px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: #2F3135 0 7px 0;
+  margin-bottom: 40px;
+}
+.banner-section .text-part h3 {
+  font-family: "Space Grotesk", sans-serif;
+  color: #9d9d9d;
+  font-size: 40px;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+@media (min-width: 1280px) and (max-width: 1399px) {
+  .banner-section .text-part h3 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1279px) {
+  .banner-section .text-part h3 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .banner-section .text-part h3 {
+    font-size: 26px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner-section .text-part h3 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .banner-section .text-part h3 {
+    font-size: 20px;
+  }
+}
+
+/************* Review Section **************/
+.review-section {
+  background-color: #020306;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.review-section .main-part {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.review-section .main-part h2 {
+  color: white;
+  font-weight: 300;
+}
+.review-section .text-part {
+  text-align: center;
+  max-width: 300px;
+  margin: auto;
+  margin-right: 0;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .review-section .text-part {
+    margin-right: auto;
+  }
+}
+.review-section .text-part h3 {
+  font-family: "Space Grotesk", sans-serif;
+  color: #9D9D9D;
+  font-size: 45px;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+.review-section .text-part h3 span {
+  color: #3F50EF;
+  font-size: 75px;
+  font-weight: 600;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .review-section .text-part h3 span {
+    font-size: 35px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1399px) {
+  .review-section .text-part h3 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1279px) {
+  .review-section .text-part h3 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .review-section .text-part h3 {
+    font-size: 26px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .review-section .text-part h3 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .review-section .text-part h3 {
+    font-size: 20px;
+  }
+}
+.review-section .slider .item-part {
+  background-color: #0F0F0F;
+  border-right: 1px solid rgba(72, 62, 62, 0.537254902);
+  padding: 25px;
+}
+.review-section .slider .item-part .star {
+  color: #FCD34D;
+}
+.review-section .slider .item-part .review-part p {
+  font-family: "Space Grotesk", sans-serif;
+  color: #9D9D9D;
+  font-size: 22px;
+  font-weight: 300;
+  min-height: 245px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+@media (min-width: 1280px) and (max-width: 1399px) {
+  .review-section .slider .item-part .review-part p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1279px) {
+  .review-section .slider .item-part .review-part p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .review-section .slider .item-part .review-part p {
+    font-size: 18px;
+    font-weight: 300;
+    min-height: 210px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .review-section .slider .item-part .review-part p {
+    font-size: 18px;
+    font-weight: 300;
+    min-height: 163px;
+  }
+}
+.review-section .slider .item-part .review-part h4 {
+  font-family: "Space Grotesk", sans-serif;
+  color: #9D9D9D;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+.review-section .slider .owl-dots {
+  margin-top: 50px !important;
+}
+.review-section .slider .owl-theme .owl-dots .owl-dot span {
+  background: #9D9D9D;
+}
+.review-section .slider .owl-theme .owl-dots .owl-dot.active span {
+  background: #3F51B5;
+  width: 13px;
+  height: 13px;
+}
+
+/************* List Box Section **************/
+.list-box-section {
+  background-color: #020306;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.list-box-section .item {
+  border: 1px solid rgba(72, 62, 62, 0.537254902);
+  padding: 30px;
+}
+.list-box-section .item .head-part h2 {
+  font-family: "Space Grotesk", sans-serif;
+  color: #fff;
+  font-size: 40px;
+  margin-left: 20px;
+  max-width: 230px;
+}
+.list-box-section .item .text-part {
+  margin-top: 25px;
+}
+.list-box-section .item .text-part p {
+  font-family: "Space Grotesk", sans-serif;
+  color: #9D9D9D;
+  font-size: 20px;
+  font-weight: 300;
+  min-height: 155px;
+}
+
+/************* List Box Section **************/
+.contact-section {
+  background-color: #020306;
+  padding-top: 70px;
+  padding-bottom: 130px;
+}
+.contact-section .text-part h2 {
+  color: #ffffff;
+}
+.contact-section .text-part p {
+  color: #9D9D9D;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: auto;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .contact-section .text-part p {
+    font-size: 18px;
+  }
+}
+.contact-section .form-control {
+  background: #28292B;
+  border: 1px solid #28292B;
+  border-radius: 1px;
+  padding: 15px;
+}
+.contact-section .form-control::-moz-placeholder {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: #9D9D9D;
+}
+.contact-section .form-control::placeholder {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: #9D9D9D;
+}
+.contact-section h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  color: #fff;
+}
+
+/************* Footer Section **************/
+footer {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-color: #040509;
+}
+footer .item {
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  footer .item {
+    display: block;
+  }
+}
+footer .item .copyright {
+  color: #fff;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  footer .item .menu {
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    flex-direction: column;
+  }
+}
+footer .item .menu a {
+  color: #fff;
+  font-family: "Space Grotesk", sans-serif;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding-left: 15px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  footer .item .menu a {
+    margin-bottom: 10px;
+    padding-left: 0px;
+  }
+}
+footer .item .social .fa-brands {
+  color: #ffffff;
+  padding-left: 10px;
+}/*# sourceMappingURL=style.css.map */

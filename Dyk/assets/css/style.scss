@@ -1,0 +1,698 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+$primary: #ffffff;
+$secondary: #9d9d9d;
+
+/************************ Media Queries ***********************/
+
+@mixin for-mobile {
+  @media (min-width: 320px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin for-tablet {
+  @media (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-pro {
+  @media (min-width: 992px) and (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin for-extra-tablet-pro {
+  @media (min-width: 1200px) and (max-width: 1279px) {
+    @content;
+  }
+}
+
+@mixin for-mini-laptop {
+  @media (min-width: 1280px) and (max-width: 1399px) {
+    @content;
+  }
+}
+@mixin for-laptop {
+  @media (min-width: 1400px) and (max-width: 2000px) {
+    @content;
+  }
+}
+
+/********************* Heading Tags *************************/
+
+body {
+  overflow-x: hidden !important;
+}
+h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 147px;
+  font-weight: 300;
+  color: $primary;
+  line-height: 125px;
+  @include for-mini-laptop{
+    font-size: 100px;
+    line-height: 85px;
+  }
+  @include for-extra-tablet-pro{
+    font-size: 100px;
+    line-height: 85px;
+  }
+  @include for-tablet-pro(){
+    font-size: 95px;
+    line-height: 65px;
+  }
+  @include for-tablet(){
+    font-size: 70px;
+    line-height: 50px;
+  }
+  @include for-mobile(){
+    font-size: 65px;
+    line-height: 45px;
+  }
+}
+h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 300;
+  font-size: 68px;
+  font-style: normal;
+  @include for-mini-laptop{
+    font-size: 50px;
+  }
+  @include for-extra-tablet-pro{
+    font-size: 50px;
+  }
+  @include for-tablet-pro(){
+    font-size: 47px;
+  }
+  @include for-tablet(){
+    font-size: 35px;
+  }
+  @include for-mobile(){
+    font-size: 32px;
+  }
+}
+
+p {
+  font-family: "Space Grotesk", sans-serif;
+}
+.global-btn {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  text-decoration: none;
+  background-color: #3f50ef;
+  border-radius: 40px;
+  padding: 10px 35px;
+  color: $primary;
+  border: 1px solid #3f50ef;
+  transition: all 0.6s;
+  @include for-mini-laptop(){
+    font-size: 18px;
+  }
+  @include for-extra-tablet-pro{
+    font-size: 18px;
+  }
+  @include for-tablet-pro(){
+    font-size: 18px;
+  }
+  @include for-tablet(){
+    font-size: 18px;
+  }
+  @include for-mobile(){
+    font-size: 16px;
+  }
+  &:hover {
+    background: transparent;
+    color: $primary;
+    border-color: #fff;
+    .fa-solid {
+      transform: rotate(0deg);
+    }
+  }
+  .fa-solid {
+    transform: rotate(-35deg);
+  }
+}
+
+/************* Header **************/
+.navbar {
+  padding-top: 30px;
+  .navbar-brand {
+    max-width: 200px;
+  }
+  ul {
+    a {
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: $primary;
+
+      padding: 8px 25px;
+    }
+  }
+}
+.active {
+  a {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #0b0c0d !important;
+    background: $primary !important;
+    padding: 8px 25px !important;
+    border-radius: 50px;
+  }
+}
+.navbar-nav {
+  border: 2px solid #fff;
+  border-radius: 50px;
+  padding: 5px;
+}
+.navbar-formobile{
+  display: none;
+  @include for-mobile{
+    display: block;
+  }
+  @include for-tablet{
+    display: block;
+  }
+  
+}
+.offcanvas-header {
+  background: #020306;;
+  .fa-solid{
+    color: #fff;
+  }
+}
+.offcanvas-body {
+  background: #020306;
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    .nav-link {
+      background-color: transparent !important;
+      padding-right: 20px;
+      padding-left: 20px;
+      position: relative;
+      color: $primary !important;
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 18px;
+      text-transform: uppercase;
+      padding-left: 0px !important;
+      &:hover {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+  .tell-num-nav {
+    font-size: 13px !important;
+  }
+  .global-button {
+    font-size: 13px !important;
+  }
+  .navbar-nav {
+    border: none;
+    border-radius: none;
+    padding: none;
+}
+}
+
+.class-for-mobile {
+  display: none;
+
+  @include for-mobile {
+    display: block;
+  }
+
+  @include for-tablet {
+    display: block;
+  }
+  
+  .fa-solid {
+    font-size: 28px;
+    color: white;
+  }
+}
+.navbar-toggler {
+  display: none;
+}
+/************* Hero Section **************/
+.hero-section {
+  background: url(../images/hero.png);
+  padding-top: 125px;
+  padding-bottom: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include for-mobile(){
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 185px;
+  }
+  .text-part {
+    
+    h2 {
+      color: $primary;
+    }
+    p {
+      margin-bottom: 35px;
+      margin-top: 30px;
+      font-size: 30px;
+      color: $secondary;
+      @include for-mini-laptop(){
+        font-size: 24px;
+      }
+      @include for-extra-tablet-pro{
+        font-size: 24px;
+      }
+      @include for-tablet-pro(){
+        font-size: 24px;
+      }
+      @include for-tablet(){
+        font-size: 18px;
+      }
+      @include for-mobile(){
+        font-size: 18px;
+      }
+    }
+  }
+  .img-part{
+    @include for-mobile(){
+      margin-top: 55px;
+    }
+  }
+}
+/************* Introduction Section **************/
+.introduction-section {
+  background-image: url("../images/bg-dy.png");
+  background-color: #020306;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-repeat: no-repeat;
+  background-position: right;
+  @include for-mobile(){
+    padding-bottom: 5px;
+  }
+  .text-part {
+    h2 {
+      color: $primary;
+    }
+    h3 {
+      font-family: "Space Grotesk", sans-serif;
+      color: $secondary;
+      font-size: 40px;
+      margin-top: 20px;
+    margin-bottom: 10px;
+      font-weight: 300;
+      @include for-mini-laptop(){
+        font-size: 24px;
+      }
+      @include for-extra-tablet-pro{
+        font-size: 24px;
+      }
+      @include for-tablet-pro(){
+        font-size: 26px;
+      }
+      @include for-tablet(){
+        font-size: 20px;
+      }
+      @include for-mobile(){
+        font-size: 20px;
+      }
+    }
+    p {
+      color: $secondary;
+      padding-top: 10px;
+      padding-bottom: 40px;
+    }
+  }
+  .row{
+    @include for-mobile(){
+      flex-direction: column-reverse;
+    }
+  
+}
+.img-part{
+  @include for-mobile(){
+    margin-top: 40px;
+  }
+}
+.global-btn{
+  background: transparent;
+  border-color: #fff;
+  &:hover{
+    background: #3f50ef;
+    border-color: #3f50ef;
+  }
+}
+}
+
+/************* Hero Text Section **************/
+.text-section {
+  background-image: url("../images/frame.png");
+  background-color: #020306;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-repeat: no-repeat;
+  background-position: right;
+  @include for-mobile(){
+    padding-top: 5px;
+  }
+  .text-part {
+    h2 {
+      -webkit-text-stroke: 2px white;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 150px;
+      color: transparent;
+      
+    }
+    h3 {
+      font-family: "Space Grotesk", sans-serif;
+      color: $secondary;
+      font-size: 40px;
+      margin-bottom: 40px;
+      font-weight: 300;
+      @include for-mini-laptop(){
+        font-size: 24px;
+      }
+      @include for-extra-tablet-pro(){
+        font-size: 24px;
+      }
+      @include for-tablet-pro(){
+        font-size: 26px;
+      }
+      @include for-tablet(){
+        font-size: 20px;
+      }
+      @include for-mobile(){
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+svg text {
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: 8px;
+  stroke: #fff;
+  font-size: 120px;
+  font-weight: 700;
+  stroke-width: 1;
+  animation: textAnimate 5s infinite alternate;
+  @include for-mini-laptop(){
+    font-size: 100px;
+  }
+  @include for-extra-tablet-pro{
+    font-size: 100px;
+  }
+  @include for-tablet-pro(){
+    font-size: 75px;
+  }
+  @include for-tablet(){
+    font-size: 57px;
+  }
+  @include for-mobile(){
+    letter-spacing: 5px;
+    stroke: #fff;
+    font-size: 29px;
+  }
+}
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset: 20%;
+    fill: hsl(0, 0%, 100%);
+  }
+
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: hsla(189, 68%, 75%, 0%);
+  }
+}
+/************* Banner Section **************/
+.banner-section{
+  background-color: #020306;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  .text-part{
+    h2{
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 120px;
+      font-weight: 600;
+      color: #fff;
+      text-shadow: #2F3135 0 7px 0;
+      margin-bottom: 40px;
+    }
+    h3 {
+      font-family: "Space Grotesk", sans-serif;
+      color: $secondary;
+      font-size: 40px;
+      margin-bottom: 40px;
+      font-weight: 300;
+      @include for-mini-laptop(){
+        font-size: 24px;
+      }
+      @include for-extra-tablet-pro(){
+        font-size: 24px;
+      }
+      @include for-tablet-pro(){
+        font-size: 26px;
+      }
+      @include for-tablet(){
+        font-size: 20px;
+      }
+      @include for-mobile(){
+        font-size: 20px;
+      }
+    }
+  }
+}
+/************* Review Section **************/
+.review-section{
+  background-color: #020306;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  .main-part{
+    text-align: center;
+    margin-bottom: 50px;
+h2{
+  color: white;
+  font-weight: 300;
+}
+  }
+  .text-part{
+    text-align: center;
+    max-width: 300px;
+    margin: auto;
+    margin-right: 0;
+    @include for-mobile(){
+      margin-right: auto;
+    }
+
+    h3 {
+      font-family: "Space Grotesk", sans-serif;
+      color: #9D9D9D;
+      font-size: 45px;
+      margin-bottom: 40px;
+      font-weight: 300;
+      span{
+        color: #3F50EF;
+        font-size: 75px;
+        font-weight: 600;
+        @include for-tablet(){
+          font-size: 35px;
+        }
+      }
+      @include for-mini-laptop(){
+        font-size: 24px;
+      }
+      @include for-extra-tablet-pro(){
+        font-size: 24px;
+      }
+      @include for-tablet-pro(){
+        font-size: 26px;
+      }
+      @include for-tablet(){
+        font-size: 20px;
+      }
+      @include for-mobile(){
+        font-size: 20px;
+      }
+    }
+  }
+  .slider{
+   
+    .item-part{
+      background-color: #0F0F0F;
+      border-right: 1px solid #483e3e89;
+      padding: 25px;
+      .star{
+        color: #FCD34D;
+      }
+      .review-part{
+        p{
+          font-family: "Space Grotesk", sans-serif;
+          color: #9D9D9D;
+          font-size: 22px;
+          font-weight: 300;
+          min-height: 245px;
+          margin-top: 30px;
+          margin-bottom: 40px;
+         @include for-mini-laptop(){
+          font-size: 18px;
+         }
+         @include for-extra-tablet-pro(){
+          font-size: 18px;
+         }
+         @include for-tablet-pro(){
+          font-size: 18px;
+          font-weight: 300;
+          min-height: 210px;
+         }
+         @include for-tablet(){
+          font-size: 18px;
+          font-weight: 300;
+          min-height: 163px;
+         }
+        }
+        h4{
+          
+          font-family: "Space Grotesk", sans-serif;
+          color: #9D9D9D;
+          font-size:20px;
+          font-weight: 500;
+          color: #fff;
+        }
+      }
+    }
+    .owl-dots{
+      margin-top: 50px !important;
+    }
+    .owl-theme .owl-dots .owl-dot span {
+      background: #9D9D9D;
+      
+  }
+    .owl-theme .owl-dots .owl-dot.active span {
+      background: #3F51B5;
+      width: 13px;
+      height: 13px;
+  }
+  }
+}
+/************* List Box Section **************/
+.list-box-section{
+  background-color: #020306;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  .item{
+    border: 1px solid #483e3e89;
+    padding: 30px;
+    .head-part{
+      h2{
+        font-family: "Space Grotesk", sans-serif;
+          color: #fff;
+          font-size: 40px;
+          margin-left: 20px;
+          max-width: 230px;
+
+      }
+    }
+    .text-part{
+      margin-top: 25px;
+      p{
+        font-family: "Space Grotesk", sans-serif;
+          color: #9D9D9D;
+          font-size: 20px;
+          font-weight: 300;
+          min-height: 155px;
+
+      }
+    }
+  }
+}
+/************* List Box Section **************/
+.contact-section{
+  background-color: #020306;
+  padding-top: 70px;
+  padding-bottom: 130px;
+  .text-part{
+    h2{
+      color: $primary;
+    }
+    p{
+      color: #9D9D9D;
+      font-size: 28px;
+      font-weight: 300;
+      line-height: auto;
+      @include for-mobile(){
+        font-size: 18px;
+      }
+    }
+  }
+  .form-control{
+    background: #28292B;
+    border: 1px solid #28292B;
+    border-radius: 1px;
+    padding: 15px;
+    &::placeholder{
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+      color: #9D9D9D;
+    }
+  }
+  h3{
+    font-family: "Space Grotesk", sans-serif;
+      font-size: 40px;
+      font-weight: 300;
+      color: #fff;
+  }
+}
+/************* Footer Section **************/
+footer{
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-color: #040509;
+  .item{
+    display: flex;
+    justify-content: space-between;
+    @include for-mobile(){
+      display: block;
+    }
+    .copyright{
+      color: #fff;
+    }
+    .menu{
+      @include for-mobile(){
+        display: flex;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        flex-direction: column;
+      }
+      a{
+        color: #fff;
+        font-family: "Space Grotesk", sans-serif;
+        text-decoration: none;
+        text-transform: capitalize;
+        padding-left: 15px;
+        @include for-mobile(){
+          margin-bottom: 10px;
+          padding-left: 0px;
+        }
+      }
+    }
+    .social{
+      .fa-brands{
+        color:$primary;
+        padding-left: 10px;
+      }
+    }
+  }
+}
